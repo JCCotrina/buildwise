@@ -1,6 +1,6 @@
-import type { ComponentType } from "react";
+import type { MDXContent } from "mdx/types";
 
-export const PLANTILLAS: Record<string, () => Promise<{ default: ComponentType }>> = {
+export const PLANTILLAS: Record<string, () => Promise<{ default: MDXContent }>> = {
   "product-brief": () => import("@/templates/product-brief.md"),
   prd: () => import("@/templates/prd.md"),
   adr: () => import("@/templates/adr.md"),
